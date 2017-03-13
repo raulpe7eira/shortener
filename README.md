@@ -1,4 +1,4 @@
-# Hire.me
+# Shortener (Fork for Hire.me)
 Um pequeno projeto para testar suas habilidades como programador.
 
 ## Instruções Gerais

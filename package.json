@@ -1,0 +1,32 @@
+{
+  "name": "shortener",
+  "version": "1.0.0",
+  "description": "A URL Shortener Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulpereira/shortener.git"
+  },
+  "author": "Raul Pereira <raul.pereira@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raulpereira/shortener/issues"
+  },
+  "homepage": "https://github.com/raulpereira/shortener#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-load": "^1.1.15",
+    "mongo-sanitize": "^1.0.0",
+    "mongoose": "^4.8.6",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  }
+}
