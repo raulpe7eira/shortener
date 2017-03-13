@@ -1,6 +1,6 @@
 // shortener/test/spec/shorturlCtrlSpec.js
 
-const server = require('./../../server');
+const server = require('./../server');
 const request = require('supertest');
 const assert = require('assert');
 

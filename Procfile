@@ -1,0 +1,1 @@
+web: h scripts/prd-server.sh
