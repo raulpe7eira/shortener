@@ -1,4 +1,4 @@
-# Shortener (Fork for bemobi/hire.me)
+# Shortener (fork for bemobi/hire.me)
 Um pequeno projeto para testar suas habilidades como programador.
 
 ## Instruções Gerais
