@@ -1,1 +1,1 @@
-web: h scripts/prd-server.sh
+web: sh scripts/prd-server.sh
