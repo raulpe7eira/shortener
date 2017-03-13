@@ -3,11 +3,8 @@
 module.exports = {
 
 	env: 'dsv',
-	debug: true,
-
-	address: 'localhost',
+	db: 'mongodb://192.168.99.100:32771/shortener-dsv',
 	port: 3000,
-
-	db: 'mongodb://192.168.99.100:32771/shortener-dsv'
+	debug: true
 
 };

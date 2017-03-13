@@ -3,11 +3,8 @@
 module.exports = {
 
 	env: 'tst',
-	debug: false,
-
-	address: 'localhost',
+	db: 'mongodb://192.168.99.100:32771/shortener-tst',
 	port: 3000,
-
-	db: 'mongodb://192.168.99.100:32771/shortener-tst'
+	debug: false
 
 };
