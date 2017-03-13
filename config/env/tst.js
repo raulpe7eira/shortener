@@ -5,7 +5,6 @@ module.exports = {
 	env: 'tst',
 	debug: false,
 
-	domain: 'localhost:3000',
 	address: 'localhost',
 	port: 3000,
 

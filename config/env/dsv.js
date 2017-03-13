@@ -5,7 +5,6 @@ module.exports = {
 	env: 'dsv',
 	debug: true,
 
-	domain: 'localhost:3000',
 	address: 'localhost',
 	port: 3000,
 
