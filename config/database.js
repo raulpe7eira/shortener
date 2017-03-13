@@ -14,7 +14,7 @@ module.exports = (uri) => {
 	});
 
 	mongoose.connection.on('disconnected', () => {
-		config.debug && console.log('[shortener-%s %s] Mongoose! Desconectado de %s ...',
+		config.debug && console.log('\n[shortener-%s %s] Mongoose! Desconectado de %s ...',
 			config.env, new Date(Date.now()).toLocaleString('pt-BR'), uri);
 	});
 
