@@ -37,8 +37,9 @@
             type: 'GET',
             crossDomain: true,
             statusCode: {
-                302: function() {
-                    console.log('FOI!');
+                302: function(data) {
+                    console.log(data);
+                    window.open('https://www.google.com', '_blank');
                 }
             },
             success: (data) => {
