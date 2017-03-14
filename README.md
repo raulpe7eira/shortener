@@ -11,7 +11,7 @@ Ter instalado localmente (somente em Desenvolvimento e Teste):
 ## Instalando dependências
 
 ```
-    npm install
+$ npm install
 ```
 
 ## Arquivo de configuração
@@ -40,13 +40,13 @@ Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são c
 ## Modo de usar no ambiente de Desenvolvimento
 
 ```
-   sh scripts/dsv-server.sh
+$ sh scripts/dsv-server.sh
 ```
 
 ## Modo de usar no ambiente de Teste
 
 ```
-   sh scripts/dsv-server.sh
+$ sh scripts/dsv-server.sh
 ```
 
 ## Ambiente de Prodção
@@ -54,7 +54,7 @@ Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são c
 ```
     Heroku + Mlab
 
-    https://gentle-crag-99464.herokuapp.com/
+    [https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)
 ```
 
 ## Algoritmo para criação de ALIAS automático 
