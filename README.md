@@ -19,12 +19,12 @@ $ npm install
 A aplicação possui um arquivo de configuração para cada ambiente (Teste, Desenvolvimento e Produção), nele nós temos as seguintes variáveis que podem ser redefinidas. Veja um exemplo padrão:
 
 ```
-    [./config/env/*.js]
+**[./config/env/*.js]**
 
-env: 'dsv',
-db: 'mongodb://localhost:2700/shortener-dsv',
-port: 3000,
-debug: true
+env: _'dsv'_,
+db: _'mongodb://localhost:2700/shortener-dsv'_,
+port: _3000_,
+debug: _true_
 ```
 
 Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
@@ -32,9 +32,9 @@ Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são c
 ## Banco de dados
 
 ```
-    MongoDb
+**MongoDb** Foi adotado uma base não relacional pois é esperado um grande volume de leitura.
 
-    Obs: As tabelas serão geradas automaticamente pela aplicação.
+_Obs:_ As tabelas serão geradas automaticamente pela aplicação.
 ```
 
 ## Modo p/ desenvolver
@@ -52,9 +52,9 @@ $ sh scripts/dsv-server.sh
 ## Acessar produção
 
 ```
-    Heroku + Mlab
+Heroku + Mlab
 
-    [https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)
+**[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)**
 ```
 
 ## Algoritmo p/ criação de novo ALIAS automático 
@@ -63,4 +63,4 @@ Foi criado um algoritmo de conversão de base 10 para 54, onde eu sempre espero 
 
 ## Diagrama de sequência
 
-TODO: Falta fazer e anexar a imagem.
+_TODO: Falta fazer e anexar a imagem._
