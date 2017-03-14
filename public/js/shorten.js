@@ -54,8 +54,8 @@
             });
     };
 
-    let topTen = () => {
-        $.get('/shortener/top10')
+    let reportTopTen = () => {
+        $.get('/shortener/reportTopTen')
             .done((res) => {
                 let resultHTML =
                     `<div class="panel panel-default table-responsive">
@@ -69,7 +69,7 @@
                                 </tr>
                             </thead>
                             <tbody>`;
-                $.each(res.top10, (i, item) => {
+                $.each(res.topTem, (i, item) => {
                     resultHTML +=
                         `<tr>
                             <th scope="row">${i+1}</th>
@@ -82,8 +82,8 @@
                             `<tbody>
                         </table>
                     </div>`;
-                $('#top10').html(resultHTML);
-                $('#top10').hide().fadeIn('slow');
+                $('#topTem').html(resultHTML);
+                $('#topTem').hide().fadeIn('slow');
             });
     };
 
@@ -106,7 +106,7 @@
     });
 
     $('#btn-refresh').on('click', () => {
-        topTen();
+        reportTopTen();
     });
 
     $(window).on('load', () => {

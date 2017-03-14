@@ -94,7 +94,7 @@ module.exports = (app) => {
 
 	};
 
-	controller.topTen = (req, res) => {
+	controller.reportTopTen = (req, res) => {
 
 		Shorturl.find().sort({ retrieved: -1 }).limit(10).exec()
 			.map((shorturl) => {
@@ -104,8 +104,8 @@ module.exports = (app) => {
 					retrieved: shorturl.retrieved
 				};
 			})
-			.then((top10) => {
-				return res.status(200).json({ top10 });
+			.then((topTen) => {
+				return res.status(200).json({ topTen });
 			});
 
 	};

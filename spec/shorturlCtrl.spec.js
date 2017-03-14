@@ -67,12 +67,12 @@ describe('ENDPOINTS BY ShorturlCtrl', () => {
 
     });
 
-    describe('GET HTTP://SHORTENER/TOP10', () => {
+    describe('GET HTTP://SHORTENER/TOPTEN', () => {
 
         it('TOP 10 RETRIEVED', (done) => {
-            request(server).get('/shortener/top10').end((err, res) => {
+            request(server).get('/shortener/topTen').end((err, res) => {
                 assert.equal(res.statusCode, 200);
-                assert.equal(JSON.parse(res.text).top10.length, 2);
+                assert.equal(JSON.parse(res.text).topTen.length, 2);
                 done();
             });
         });

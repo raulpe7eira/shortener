@@ -10,7 +10,7 @@ module.exports = (app) => {
 	app.route('/shortener/u/:alias')
 		.get(ShorturlCtrl.retrieveUrl);
 
-	app.route('/shortener/top10')
-		.get(ShorturlCtrl.topTen);
+	app.route('/shortener/topTen')
+		.get(ShorturlCtrl.reportTopTen);
 
 };
