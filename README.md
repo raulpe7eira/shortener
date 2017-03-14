@@ -2,9 +2,9 @@
 
 Um pequeno projeto para testar minhas habilidades.
 
-## Pre-requisitos
+## Pré-requisitos
 
-Ter instalado localmente (somente em Desenvolvimento e Teste):
+Ter instalado localmente (apenas p/ Desenvolvimento e Teste):
 - NodeJs
 - MongoDb
 
@@ -21,15 +21,15 @@ A aplicação possui um arquivo de configuração para cada ambiente (Teste, Des
 ```
     [./config/env/*.js]
 
-    env: 'dsv',
-    db: 'mongodb://localhost:2700/shortener-dsv',
-    port: 3000,
-    debug: true
+env: 'dsv',
+db: 'mongodb://localhost:2700/shortener-dsv',
+port: 3000,
+debug: true
 ```
 
 Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
 
-## Banco
+## Banco de dados
 
 ```
     MongoDb
@@ -37,19 +37,19 @@ Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são c
     Obs: As tabelas serão geradas automaticamente pela aplicação.
 ```
 
-## Modo de usar no ambiente de Desenvolvimento
+## Modo p/ desenvolver
 
 ```
 $ sh scripts/dsv-server.sh
 ```
 
-## Modo de usar no ambiente de Teste
+## Modo p/ testar
 
 ```
 $ sh scripts/dsv-server.sh
 ```
 
-## Ambiente de Prodção
+## Acessar produção
 
 ```
     Heroku + Mlab
@@ -57,7 +57,7 @@ $ sh scripts/dsv-server.sh
     [https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)
 ```
 
-## Algoritmo para criação de ALIAS automático 
+## Algoritmo p/ criação de novo ALIAS automático 
 
 Foi criado um algoritmo de conversão de base 10 para 54, onde eu sempre espero um inteiro e retorno uma string convertida, para garantir que o número será sempre único, a base possui uma tabela sequencial que toda vez que há a necessidade de criar um novo ALIAS eu pego um incremento da última sequência, com base nesse número é gerada a string que será o novo ALIAS.
 
