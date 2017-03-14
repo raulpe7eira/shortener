@@ -24,3 +24,13 @@ h2 {
 .glyphicon-heart-empty {
     top: 2px;
 }
+
+.page-404 .bg-warning {
+    padding-bottom:10%;
+    padding-top:10%;
+}
+
+.page-404 h2,
+.page-404 .glyphicon-thumbs-down {
+    font-size:60px;
+}
