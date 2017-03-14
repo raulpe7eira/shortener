@@ -32,26 +32,21 @@
     };
 
     let retrieveURL = () => {
-        $.get(`/shortener/u/${$('#alias-field').val()}`)
-            .done((res) => {
-                console.log(`ok: ${res}`);
-                document.write(JSON.stringify(res));
-            })
-            .fail((err) => {
-                console.log(`err: ${err}`);
-                if (err.responseJSON) {
-                    let resultERR =
-                        `<div class="alert alert-danger alert-dismissible" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                            <span class="sr-only">Error:</span> <strong>${err.responseJSON.err_code} - ${err.responseJSON.description}</strong>
-                        </div>`;
-                    $('#response').html(resultERR);
-                    $('#response').hide().fadeIn('slow');
+        $.ajax({
+            url: `/shortener/u/${$('#alias-field').val()}`,
+            type: 'GET',
+            crossDomain: true,
+            statusCode: {
+                302: function() {
+                    console.log('FOI!');
                 }
-            });
+            },
+            success: (data) => {
+                var resultHTML = `<a href="${data.url}">${data.url}</a>`;
+                $('#link').html(resultHTML);
+                $('#link').hide().fadeIn('slow');
+            },
+        });
     };
 
     let reportTopTen = () => {
