@@ -4,7 +4,7 @@ Um pequeno projeto para testar minhas habilidades.
 
 ## Pre-requisitos
 
-Ter instalado localmente, para rodar no ambiente de Desenvolvimento e Teste:
+Ter instalado localmente (somente em Desenvolvimento e Teste):
 - NodeJs
 - MongoDb
 
@@ -34,9 +34,7 @@ Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são c
 ```
     MongoDb
 
-    Obs:
-    - As tabelas serão geradas automaticamente pela aplicação
-    - Foi criado duas tabelas, uma para guardar um sequencial e outra para guardar as URLs
+    Obs: As tabelas serão geradas automaticamente pela aplicação.
 ```
 
 ## Modo de usar no ambiente de Desenvolvimento
