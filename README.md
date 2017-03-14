@@ -18,7 +18,7 @@ $ npm install
 
 A aplicação possui um arquivo de configuração para cada ambiente (Teste, Desenvolvimento e Produção), nele nós temos as seguintes variáveis que podem ser redefinidas. Veja um exemplo padrão:
 
-[/shortener/config/env/dsv.js](../master/config/env/dsv.js)
+[// shortener/config/env/dsv.js](../master/config/env/dsv.js)
 ```javascript
 module.exports = {
 
