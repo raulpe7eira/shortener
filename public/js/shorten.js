@@ -37,15 +37,25 @@
             type: 'GET',
             crossDomain: true,
             statusCode: {
-                302: function(data) {
-                    console.log(data);
-                    window.open('https://www.google.com', '_blank');
+                302: function(jqXHR) {
+                    if (jqXHR.getResponseHeader('Location') != null) { 
+                        window.open(jqXHR.getResponseHeader('Location'), '_blank');
+                    }
                 }
             },
-            success: (data) => {
-                var resultHTML = `<a href="${data.url}">${data.url}</a>`;
-                $('#link').html(resultHTML);
-                $('#link').hide().fadeIn('slow');
+            error: (err) => {
+                if (err.responseJSON) {
+                    let resultERR =
+                        `<div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span> <strong>${err.responseJSON.err_code} - ${err.responseJSON.description}</strong>
+                        </div>`;
+                    $('#response').html(resultERR);
+                    $('#response').hide().fadeIn('slow');
+                }
             },
         });
     };
