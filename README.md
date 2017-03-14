@@ -2,19 +2,21 @@
 
 Um pequeno projeto para testar minhas habilidades.
 
-## Pré-requisitos
+## Instalções
+
+### Pré-requisitos
 
 Ter instalado localmente (apenas p/ Desenvolvimento e Teste):
-- NodeJs
-- MongoDb
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://mongodb.com/)
 
-## Instalando dependências
+### Instalando dependências
 
 ```bash
 $ npm install
 ```
 
-## Arquivo de configuração
+### Configurando os ambientes
 
 A aplicação possui um arquivo de configuração para cada ambiente (Teste, Desenvolvimento e Produção), nele nós temos as seguintes variáveis que podem ser redefinidas. Veja um exemplo padrão:
 
@@ -39,29 +41,23 @@ Variável | Descrição | Valores
 
 Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
 
-## Banco de dados
+## Inicialização
 
-**MongoDb**: Foi adotado uma base não relacional por esperar um grande volume de consultas.
-
-_Obs:_ As tabelas serão geradas automaticamente pela aplicação.
-
-## Modo p/ desenvolver
+### Modo p/ desenvolver
 
 ```bash
 $ sh scripts/dsv-server.sh
 ```
 
-## Modo p/ testar
+### Modo p/ testar
 
 ```bash
 $ sh scripts/dsv-server.sh
 ```
 
-## Acessar produção
+### Produção
 
-**Heroku + Mlab**: Ambos foram escolhidos pela facilidade de uso e seu pacote de dados gratuito.
-
-_[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)_
+Basta acessar: *[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)*
 
 ## Algoritmo p/ criação de novo ALIAS automático 
 
@@ -70,3 +66,21 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 ## Diagrama de sequência
 
 `_TODO: Falta fazer e anexar a imagem._`
+
+## Razão p/ cada escolha
+
+### Plataforma
+
+**[Node.js](https://nodejs.org/)**: Foi uma escolha pessoal, resolvi encarar o desafio com uma plataforma que não tenho experiência profissional, fora que facilitaria ter tanto no backend quanto no frontend, o uso da mesma única linguagem em todas as camadas da aplicação.
+
+### Web Server
+
+**[Express.js](https://expressjs.com/)**: Foi escolhido pela popularidade e pela vasta gama de material na web, facilitando a meta de cumprir com o prazo de entrega.
+
+### Banco de dados
+
+**[MongoDB](https://mongodb.com/)**: Além de ser um banco de dados não relacional que dará conta do recado caso o volume de consultas seja grande. Este também seria outra camada no desenvolvimento que utilizaria a mesma linguagem para desenvolvimento.
+
+### Ambiente de produção
+
+**[Heroku](https://heroku.com) + [mLab](https://mlab.com)**: Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos.
