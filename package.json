@@ -20,6 +20,7 @@
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
     "bower": "^1.8.0",
+    "cors": "^2.8.1",
     "express": "^4.15.2",
     "express-load": "^1.1.15",
     "helmet": "^3.5.0",
