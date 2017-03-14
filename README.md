@@ -33,7 +33,7 @@ module.exports = {
 
 Variável | Descrição | Valores
 --- | --- | ---
-**env** | Define o ambiente | `'dsv'`, `'tst'` , `'prd`
+**env** | Define o ambiente | `'dsv'`, `'tst'` , `'prd'`
 **db** | URL de conexão com a base de dados | `string`
 **port** | Número da porta do servidor | `number`
 **debug** | Habilita o modo Debug | `boolean`
@@ -66,8 +66,8 @@ _[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.
 
 ## Algoritmo p/ criação de novo ALIAS automático 
 
-Foi criado um algoritmo de conversão de base 10 para 54, onde eu sempre espero um inteiro e retorno uma string convertida, para garantir que o número será sempre único, a base possui uma tabela sequencial que toda vez que há a necessidade de criar um novo ALIAS eu pego um incremento da última sequência, com base nesse número é gerada a string que será o novo ALIAS.
+Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempre espero um `inteiro` e retorno uma `string` convertida, para garantir que o número será sempre único, a base possui uma tabela sequencial que toda vez que há a necessidade de criar um ALIAS não customizado, incrementamos a última sequência e com base nesse número é gerada a `string` que será o novo ALIAS.
 
 ## Diagrama de sequência
 
-_TODO: Falta fazer e anexar a imagem._
+`_TODO: Falta fazer e anexar a imagem._`
