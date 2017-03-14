@@ -3,6 +3,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const helmet = require('helmet');
 const expressLoad = require('express-load');
 
@@ -15,13 +16,9 @@ module.exports = () => {
 
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: true }));
-	app.use((req, res, next) => {
-		res.header('Access-Control-Allow-Origin', '*');
-		res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS, PATCH');
-		res.header('Access-Control-Allow-Headers', '*');
-		res.header('Access-Control-Allow-Credentials', 'true');
-		next();
-	});
+
+	app.use(cors());
+
 	app.enable('trust proxy');
 
 	app.use(helmet.dnsPrefetchControl());
