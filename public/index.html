@@ -12,34 +12,35 @@
             <h1><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Shortener</h1>
 
             <div class="row bg-primary">
-                <div class="col-md-6">
-                    <form class="form-inline">
-                        <div class="form-group">
+                <form class="col-md-6 form-inline">
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-btn btn-group" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="options" id="shorten" autocomplete="off" checked> Shorten
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="options" id="retrived" autocomplete="off"> Retrived
+                                </label>
+                            </div>
+
                             <label class="sr-only" for="url-field">URL</label>
-                            <label class="sr-only" for="alias-field">Alias</label>
-                            <div class="input-group input-group-lg">
-                                <div class="input-group-btn" data-toggle="buttons">
-                                    <label class="btn btn-default active">
-                                        <input type="radio" name="options" id="shorten" autocomplete="off" checked>Shorten
-                                    </label>
-                                    <label class="btn btn-default">
-                                        <input type="radio" name="options" id="retrived" autocomplete="off">Retrived
-                                    </label>
-                                </div>
-                                <input type="text" class="form-control input-lg" id="url-field" placeholder="URL">
-                                <div class="input-group-btn">
-                                    <input type="text" class="form-control input-lg" id="alias-field" placeholder="Alias">
-                                    <button type="button" class="btn btn-info btn-lg" id="btn-shorten">GO</button>
-                                </div>
+                            <input type="text" class="form-control input-lg" id="url-field" placeholder="URL">
+
+                            <div class="input-group-btn">
+                                <label class="sr-only" for="alias-field">Alias</label>
+                                <input type="text" class="form-control input-lg" id="alias-field" placeholder="Alias">
+
+                                <button type="button" class="btn btn-info btn-lg" id="btn-shorten">GO</button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
                 <div class="col-md-6" id="response"></div>
             </div>
 
             <div class="row">
-                <div class="container-fluid navbar-inverse">
+                <div class="navbar-inverse container-fluid">
                     <button type="button" class="btn btn-default btn-xs navbar-btn navbar-left" aria-label="Refresh" id="btn-refresh">
                         <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
                     </button>
