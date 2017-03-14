@@ -10,7 +10,7 @@ Ter instalado localmente (apenas p/ Desenvolvimento e Teste):
 
 ## Instalando dependências
 
-```
+```bash
 $ npm install
 ```
 
@@ -18,44 +18,51 @@ $ npm install
 
 A aplicação possui um arquivo de configuração para cada ambiente (Teste, Desenvolvimento e Produção), nele nós temos as seguintes variáveis que podem ser redefinidas. Veja um exemplo padrão:
 
-```
-**[./config/env/*.js]**
+```javascript
+// shortener/config/env/dsv.js
 
-env: _'dsv'_,
-db: _'mongodb://localhost:2700/shortener-dsv'_,
-port: _3000_,
-debug: _true_
+module.exports = {
+
+	env: 'dsv',
+	db: 'mongodb://192.168.99.100:32771/shortener-dsv',
+	port: 3000,
+	debug: true
+
+};
 ```
+
+Variável | Descrição | Valores
+--- | --- | ---
+**env** | Define o ambiente | `'dsv'`, `'tst'` , `'prd`
+**db** | URL de conexão com a base de dados | `string`
+**port** | Número da porta do servidor | `number`
+**debug** | Habilita o modo Debug | `boolean`
 
 Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
 
 ## Banco de dados
 
-```
-**MongoDb** Foi adotado uma base não relacional pois é esperado um grande volume de leitura.
+**MongoDb**: Foi adotado uma base não relacional por esperar um grande volume de consultas.
 
 _Obs:_ As tabelas serão geradas automaticamente pela aplicação.
-```
 
 ## Modo p/ desenvolver
 
-```
+```bash
 $ sh scripts/dsv-server.sh
 ```
 
 ## Modo p/ testar
 
-```
+```bash
 $ sh scripts/dsv-server.sh
 ```
 
 ## Acessar produção
 
-```
-Heroku + Mlab
+**Heroku + Mlab**: Ambos foram escolhidos pela facilidade de uso e seu pacote de dados gratuito.
 
-**[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)**
-```
+_[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)_
 
 ## Algoritmo p/ criação de novo ALIAS automático 
 
