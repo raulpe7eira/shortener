@@ -1,6 +1,21 @@
 +(($) => {
     'use strict';
 
+    let showError = (err) => {
+        if (err && err.responseJSON) {
+            let resultERR =
+                `<div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span> <strong>${err.responseJSON.err_code} - ${err.responseJSON.description}</strong>
+                </div>`;
+            $('#response').html(resultERR);
+            $('#response').hide().fadeIn('slow');
+        }
+    }
+
     let shortenURL = () => {
         $.post(`/shortener/create/?${$.param({ url: $('#url-field').val(), CUSTOM_ALIAS: $('#alias-field').val() })}`)
             .done((res) => {
@@ -16,18 +31,7 @@
                 $('#response').hide().fadeIn('slow');
             })
             .fail((err) => {
-                if (err.responseJSON) {
-                    let resultERR =
-                        `<div class="alert alert-danger alert-dismissible" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                            <span class="sr-only">Error:</span> <strong>${err.responseJSON.err_code} - ${err.responseJSON.description}</strong>
-                        </div>`;
-                    $('#response').html(resultERR);
-                    $('#response').hide().fadeIn('slow');
-                }
+                showError(err);
             });
     };
 
@@ -44,18 +48,7 @@
                 }
             },
             error: (err) => {
-                if (err.responseJSON) {
-                    let resultERR =
-                        `<div class="alert alert-danger alert-dismissible" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                            <span class="sr-only">Error:</span> <strong>${err.responseJSON.err_code} - ${err.responseJSON.description}</strong>
-                        </div>`;
-                    $('#response').html(resultERR);
-                    $('#response').hide().fadeIn('slow');
-                }
+                showError(err);
             },
         });
     };
