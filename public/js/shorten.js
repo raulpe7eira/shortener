@@ -38,7 +38,7 @@
             crossDomain: true,
             statusCode: {
                 302: function(jqXHR) {
-                    if (jqXHR.getResponseHeader('Location') != null) { 
+                    if (jqXHR.getResponseHeader('Location')) { 
                         window.open(jqXHR.getResponseHeader('Location'), '_blank');
                     }
                 }

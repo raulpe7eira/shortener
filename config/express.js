@@ -16,14 +16,11 @@ module.exports = () => {
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: true }));
 	app.use((req, res, next) => {
-		if ('OPTIONS' == req.method) {
-			res.header('Access-Control-Allow-Origin', '*');
-			res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
-			res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-			res.send(200);
-		} else {
-			next();
-		}
+		res.header('Access-Control-Allow-Origin', '*');
+		res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS, PATCH');
+		res.header('Access-Control-Allow-Headers', '*');
+		res.header('Access-Control-Allow-Credentials', 'true');
+		next();
 	});
 	app.enable('trust proxy');
 
