@@ -55,7 +55,7 @@
     };
 
     let reportTopTen = () => {
-        $.get('/shortener/reportTopTen')
+        $.get('/shortener/topTen')
             .done((res) => {
                 let resultHTML =
                     `<div class="panel panel-default table-responsive">
