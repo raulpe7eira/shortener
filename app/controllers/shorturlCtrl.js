@@ -82,7 +82,7 @@ module.exports = (app) => {
 
 		Shorturl.findOneAndUpdate({ alias: dataReq.alias }, { $inc: { retrieved: 1 } })
 			.then((shorturl) => {
-				return res.status(200).redirect(shorturl.url);
+				return res.redirect(301, shorturl.url);
 			})
 			.catch(() => {
 				return res.status(400).json({
