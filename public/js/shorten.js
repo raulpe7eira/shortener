@@ -10,7 +10,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                        <span class="sr-only">Success:</span> Your Short URL <a href="${res.url}" class="alert-link">${res.url}</a> is DONE!
+                        <span class="sr-only">Success:</span> Your Short URL <a href="${res.url}" class="alert-link" target="_blank">${res.url}</a> is DONE!
                     </div>`;
                 $('#response').html(resultHTML);
                 $('#response').hide().fadeIn('slow');
