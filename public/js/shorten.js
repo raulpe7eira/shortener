@@ -62,7 +62,10 @@
                         <table class="table table-striped table-hover table-condensed">
                             <thead>
                                 <tr>
-                                    <th>#</th><th>Short URL</th><th>Original URL</th><th>Retrieved</th>
+                                    <th>#</th>
+                                    <th>Short URL</th>
+                                    <th>Original URL</th>
+                                    <th>Retrieved</th>
                                 </tr>
                             </thead>
                             <tbody>`;
@@ -70,8 +73,9 @@
                     resultHTML +=
                         `<tr>
                             <th scope="row">${i+1}</th>
-                            <td><a href="/shortener/u/${item.alias}">http://shortener/u/${item.alias}</a></td>
-                            <td>${item.url}</td><td>${item.retrieved}</td>
+                            <td><a href="/shortener/u/${item.alias}" target="_blank">http://shortener/u/${item.alias}</a></td>
+                            <td>${item.url}</td>
+                            <td>${item.retrieved}</td>
                         </tr>`;
                 });
                 resultHTML +=
