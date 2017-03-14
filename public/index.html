@@ -3,18 +3,54 @@
     <head>
         <meta charset="utf-8">
         <title>Shortener</title>
+        <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Shortener</h1>
+        <div class="container-fluid">
+            <h1><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Shortener</h1>
 
-        <input id="url-field" type="text" placeholder="Paste a link...">
-        <input id="alias-field" type="text" placeholder="Paste a alias...">
-        <button id="btn-shorten" type="button">SHORTEN</button>
+            <div class="row bg-primary">
+                <div class="col-md-6">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="url-field">URL</label>
+                            <label class="sr-only" for="alias-field">Alias</label>
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-btn" data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="options" id="shorten" autocomplete="off" checked>Shorten
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="options" id="retrived" autocomplete="off">Retrived
+                                    </label>
+                                </div>
+                                <input type="text" class="form-control input-lg" id="url-field" placeholder="URL">
+                                <div class="input-group-btn">
+                                    <input type="text" class="form-control input-lg" id="alias-field" placeholder="Alias">
+                                    <button type="button" class="btn btn-info btn-lg" id="btn-shorten">GO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6" id="response"></div>
+            </div>
 
-        <div id="link"></div>
+            <div class="row">
+                <div class="container-fluid navbar-inverse">
+                    <button type="button" class="btn btn-default btn-xs navbar-btn navbar-left" aria-label="Refresh" id="btn-refresh">
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                    </button>
+                    <h2 class="navbar-text"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> TOP 10 URL RETRIVED</h2>
+                </div>
+                <div id="top10"></div>
+            </div>
+        </div>
 
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="jquery/dist/jquery.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.js"></script>
         <script src="js/shorten.js"></script>
     </body>
 </html>

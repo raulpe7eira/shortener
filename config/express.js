@@ -10,6 +10,7 @@ module.exports = () => {
 	const app = express();
 
     app.use(express.static(path.join(__dirname, '../public')));
+    app.use(express.static(path.join(__dirname, '../bower_components')));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: true }));
 	app.enable('trust proxy');
