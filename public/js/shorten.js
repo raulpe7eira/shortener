@@ -69,7 +69,7 @@
                                 </tr>
                             </thead>
                             <tbody>`;
-                $.each(res.topTem, (i, item) => {
+                $.each(res.topTen, (i, item) => {
                     resultHTML +=
                         `<tr>
                             <th scope="row">${i+1}</th>
@@ -82,8 +82,8 @@
                             `<tbody>
                         </table>
                     </div>`;
-                $('#topTem').html(resultHTML);
-                $('#topTem').hide().fadeIn('slow');
+                $('#topTen').html(resultHTML);
+                $('#topTen').hide().fadeIn('slow');
             });
     };
 
