@@ -2,7 +2,7 @@
 
 Um pequeno projeto para testar minhas habilidades.
 
-## Instalções
+## Instalação
 
 ### Pré-requisitos
 
@@ -41,33 +41,35 @@ Variável | Descrição | Valores
 
 Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
 
-## Inicialização
+## Subir e Rodar
 
-### Modo p/ desenvolver
-
-```bash
-$ sh scripts/dsv-server.sh
-```
-
-### Modo p/ testar
+### Ambiente de desenvolvemento
 
 ```bash
 $ sh scripts/dsv-server.sh
 ```
 
-### Produção
+### Ambiente de teste
+
+```bash
+$ sh scripts/dsv-server.sh
+```
+
+### Ambiente de produção
 
 Basta acessar: *[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)*
 
-## Algoritmo p/ criação de novo ALIAS automático 
+## Fluxos
 
-Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempre espero um `inteiro` e retorno uma `string` convertida, para garantir que o número será sempre único, a base possui uma tabela sequencial que toda vez que há a necessidade de criar um ALIAS não customizado, incrementamos a última sequência e com base nesse número é gerada a `string` que será o novo ALIAS.
+### Criação de `Alias` 
 
-## Diagrama de sequência
+Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempre espero um `inteiro` e retorno uma `string` convertida, para garantir que o `número` será sempre único, a base possui uma tabela sequencial que toda vez que há a necessidade de criar um `Alias` não customizado, incrementamos a última sequência e com base nesse `número` é gerada a `string` que será o novo `Alias`.
+
+### Diagrama de sequência
 
 `_TODO: Falta fazer e anexar a imagem._`
 
-## Razão p/ cada escolha
+## Considerações
 
 ### Plataforma
 
@@ -79,8 +81,8 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 
 ### Banco de dados
 
-**[MongoDB](https://mongodb.com/)**: Além de ser um banco de dados não relacional que dará conta do recado caso o volume de consultas seja grande. Este também seria outra camada no desenvolvimento que utilizaria a mesma linguagem para desenvolvimento.
+**[MongoDB](https://mongodb.com/)**: Além de ser um banco de dados não relacional que dará conta do recado caso o volume de consultas seja grande, este também seria outra camada no desenvolvimento que utilizaria a mesma linguagem para desenvolvimento.
 
-### Ambiente de produção
+### Implantar
 
 **[Heroku](https://heroku.com) + [mLab](https://mlab.com)**: Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos.
