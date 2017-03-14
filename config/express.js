@@ -3,6 +3,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const helmet = require('helmet');
 const expressLoad = require('express-load');
 
 module.exports = () => {
@@ -11,6 +12,7 @@ module.exports = () => {
 
     app.use(express.static(path.join(__dirname, '../public')));
     app.use(express.static(path.join(__dirname, '../bower_components')));
+
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: true }));
 	app.use((req, res, next) => {
@@ -24,6 +26,13 @@ module.exports = () => {
 		}
 	});
 	app.enable('trust proxy');
+
+	app.use(helmet.dnsPrefetchControl());
+	app.use(helmet.frameguard());
+	app.use(helmet.hidePoweredBy());
+	app.use(helmet.ieNoOpen());
+	app.use(helmet.noSniff());
+	app.use(helmet.xssFilter());
 
 	// backend
 	expressLoad('models', { cwd: 'app' })
