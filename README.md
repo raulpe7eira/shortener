@@ -87,7 +87,7 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 
 ### Frontend
 
-**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** + **[JS](?)** + **[Bootstrap](http://getbootstrap.com/)** + **[jQuery](https://jquery.com/)**: Não utilizei nenhum framework para implementar essa camada da solução pois o foco era maior na parte do backend, o deseja era apenas apresentar uma interface simples que consegui-se executar todos os endpoints.
+**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** + **[Bootstrap](http://getbootstrap.com/)** + **[JS](?)** + **[jQuery](https://jquery.com/)**: Não utilizei nenhum framework para implementar essa camada da solução pois o foco era maior na parte do backend, o deseja era apenas apresentar uma interface simples que consegui-se executar todos os endpoints.
 
 ### Testes
 
@@ -96,3 +96,7 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 ### Servidores de produção
 
 **[Heroku](https://heroku.com)** (PAAS) + **[mLab](https://mlab.com)** (BAAS): Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos. Além de serem facilmente integrados com o [GitHub](https://github.com/), que é responsável pelo versionamento do cdigo.
+
+## Conclusao
+
+Aprendi bastante em 3 dias de desenvolvimento, ainda existem várias melhorias que podem ser realizadas e possivelmente vários refatorações a serem feitos, AVANTE MOCADA! :muscle:
