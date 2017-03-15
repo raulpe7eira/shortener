@@ -62,7 +62,7 @@ $ sh scripts/tst-server.sh
 
 ### Ambiente de produção
 
-Basta acessar: *[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)*
+Basta acessar: *[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)* :clap:
 
 ## Fluxos
 
