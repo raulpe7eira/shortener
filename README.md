@@ -2,6 +2,8 @@
 
 Um pequeno projeto para testar minhas habilidades.
 
+![frontend-scshot](../master/scshot/frontend-scshot.png)
+
 ## Instalação
 
 ### Pré-requisitos
@@ -48,12 +50,15 @@ _Obs.:_ Vale ressaltar que em ambiente de produção, muitas das variáveis são
 ```bash
 $ sh scripts/dsv-server.sh
 ```
+![dsv-scshot](../master/scshot/dsv-scshot.png)
 
 ### Ambiente de teste
 
 ```bash
 $ sh scripts/tst-server.sh
 ```
+
+![tst-scshot](../master/scshot/tst-scshot.png)
 
 ### Ambiente de produção
 
@@ -117,10 +122,10 @@ Foi criado um algoritmo de conversão de `base 10` para `base 58`, onde eu sempr
 
 ### Servidores de produção
 
-**[Heroku](https://heroku.com)** (PAAS) + **[mLab](https://mlab.com)** (DAAS): Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos. Além de serem facilmente integrados com o [GitHub](https://github.com/), que é responsável pelo versionamento do cdigo.
+**[Heroku](https://heroku.com)** (PAAS) + **[mLab](https://mlab.com)** (DAAS): Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos. Além de serem facilmente integrados com o [GitHub](https://github.com/), que é responsável pelo versionamento do código.
 
 ## Conclusão
 
-Aprendi bastante em 3 dias de desenvolvimento, ainda existem várias melhorias que podem ser realizadas e possivelmente vários refatorações a serem feitos, a maior parte delas esta na parte cliente, talvez usando algum framework como [Angular](https://angular.io/) ou [React](https://facebook.github.io/react/), também configuraria algum serviço de integração continua como o [Travis.ci](https://travis-ci.org). Enfim, novas melhoras em outro fork, num futuro próximo... ;)
+Aprendi bastante em 3 dias de desenvolvimento, ainda existem várias melhorias que podem ser realizadas e possivelmente várias refatorações a serem feitas, a maior parte delas esta na parte cliente, talvez usando algum framework como [Angular](https://angular.io/) ou [React](https://facebook.github.io/react/), também configuraria algum serviço de integração continua como o [Travis.ci](https://travis-ci.org), para agilizar e tornar seguro o processo de deploy. Enfim, novas melhoras em outro fork, num futuro bem próximo... ;)
 
 AVANTE MOÇADA! :muscle:
