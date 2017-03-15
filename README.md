@@ -41,7 +41,7 @@ Variável | Descrição | Valores
 
 Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
 
-## Subir e Rodar
+## Subir & Rodar
 
 ### Ambiente de desenvolvemento
 
@@ -52,7 +52,7 @@ $ sh scripts/dsv-server.sh
 ### Ambiente de teste
 
 ```bash
-$ sh scripts/dsv-server.sh
+$ sh scripts/tst-server.sh
 ```
 
 ### Ambiente de produção
@@ -61,7 +61,7 @@ Basta acessar: *[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-9
 
 ## Fluxos
 
-### Criação de `Alias` 
+### Criação de Alias
 
 Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempre espero um `inteiro` e retorno uma `string` convertida, para garantir que o `número` será sempre único, a base possui uma tabela sequencial que toda vez que há a necessidade de criar um `Alias` não customizado, incrementamos a última sequência e com base nesse `número` é gerada a `string` que será o novo `Alias`.
 
@@ -73,16 +73,26 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 
 ### Plataforma
 
-**[Node.js](https://nodejs.org/)**: Foi uma escolha pessoal, resolvi encarar o desafio com uma plataforma que não tenho experiência profissional, fora que facilitaria ter tanto no backend quanto no frontend, o uso da mesma única linguagem em todas as camadas da aplicação.
+**[Node.js](https://nodejs.org/)**: Foi uma escolha pessoal, resolvi encarar o desafio com uma plataforma que não tenho experiência profissional, fora que facilitaria ter tanto no backend quanto no frontend, o uso da mesma linguagem em todas as camadas da aplicação.
 
-### Web Server
+### Backend
+
+#### Web Server
 
 **[Express.js](https://expressjs.com/)**: Foi escolhido pela popularidade e pela vasta gama de material na web, facilitando a meta de cumprir com o prazo de entrega.
 
-### Banco de dados
+#### Banco de dados
 
 **[MongoDB](https://mongodb.com/)**: Além de ser um banco de dados não relacional que dará conta do recado caso o volume de consultas seja grande, este também seria outra camada no desenvolvimento que utilizaria a mesma linguagem para desenvolvimento.
 
-### Implantar
+### Frontend
 
-**[Heroku](https://heroku.com) + [mLab](https://mlab.com)**: Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos.
+**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** + **[JS](?)** + **[Bootstrap](http://getbootstrap.com/)** + **[jQuery](https://jquery.com/)**: Não utilizei nenhum framework para implementar essa camada da solução pois o foco era maior na parte do backend, o deseja era apenas apresentar uma interface simples que consegui-se executar todos os endpoints.
+
+### Testes
+
+**[Mocha](https://mochajs.org/)** + **[SuperTest](https://github.com/visionmedia/supertest)**: Essa dupla foi utilizada para testar todos os endpoints do backend. Porém ficou faltando realizar os teste para o frontend, além de um teste E2E, necessários para orquestrar todo processo de implantação em ambiente de produção.
+
+### Servidores de produção
+
+**[Heroku](https://heroku.com)** (PAAS) + **[mLab](https://mlab.com)** (BAAS): Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos. Além de serem facilmente integrados com o [GitHub](https://github.com/), que é responsável pelo versionamento do cdigo.
