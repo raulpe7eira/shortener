@@ -18,7 +18,7 @@ $ npm install
 
 ### Configurando os ambientes
 
-A aplicação possui um arquivo de configuração para cada ambiente (Teste, Desenvolvimento e Produção), nele nós temos as seguintes variáveis que podem ser redefinidas. Veja um exemplo padrão:
+A aplicação possui um arquivo de configuração para cada ambiente (Teste, Desenvolvimento e Produção), nele temos as seguintes variáveis que podem ser redefinidas. Veja um exemplo padrão:
 
 [// shortener/config/env/dsv.js](../master/config/env/dsv.js)
 ```javascript
@@ -39,7 +39,7 @@ Variável | Descrição | Valores
 **port** | Número da porta do servidor | `number`
 **debug** | Habilita o modo Debug | `boolean`
 
-Obs.: Vale ressaltar que em ambiente de Produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
+_Obs.:_ Vale ressaltar que em ambiente de produção, muitas das variáveis são configuradas no próprio servidor escolhido e por motivos de segurança, não deve constar tais informações em arquivos públicos.
 
 ## Subir & Rodar
 
@@ -87,7 +87,7 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 
 ### Frontend
 
-**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** + **[Bootstrap](http://getbootstrap.com/)** + **[JS](?)** + **[jQuery](https://jquery.com/)**: Não utilizei nenhum framework para implementar essa camada da solução pois o foco era maior na parte do backend, o desejo era apenas apresentar uma interface simples que consegui-se executar todos os endpoints.
+**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** + **[Bootstrap](http://getbootstrap.com/)** + **[JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** + **[jQuery](https://jquery.com/)**: Não utilizei nenhum framework para implementar essa camada da solução, apenas bibliotecas facilitadoras, pois o foco era maior na parte backend, o desejo era apenas apresentar uma interface simples que conseguisse executar todos os endpoints.
 
 ### Testes
 
