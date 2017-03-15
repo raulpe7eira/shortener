@@ -10,6 +10,7 @@ Um pequeno projeto para testar minhas habilidades.
 
 Ter instalado localmente (apenas p/ Desenvolvimento e Teste):
 - [Node.js](https://nodejs.org/)
+- [nodemon](https://nodemon.io/)
 - [MongoDB](https://mongodb.com/)
 
 ### Instalando dependências
@@ -62,7 +63,7 @@ $ sh scripts/tst-server.sh
 
 ### Ambiente de produção
 
-Basta acessar: *[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)* :clap:
+:clap: Acesse => *[https://gentle-crag-99464.herokuapp.com/](https://gentle-crag-99464.herokuapp.com/)*
 
 ## Fluxos
 
@@ -114,7 +115,7 @@ Foi criado um algoritmo de conversão de `base 10` para `base 58`, onde eu sempr
 
 ### Frontend
 
-**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** + **[Bootstrap](http://getbootstrap.com/)** + **[JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** + **[jQuery](https://jquery.com/)**: Não utilizei nenhum framework para implementar essa camada da solução, apenas bibliotecas facilitadoras, pois o foco era maior na parte backend, o desejo era apenas apresentar uma interface simples que conseguisse executar todos os endpoints.
+**[HTML](https://w3.org/html/)** + **[CSS](https://w3.org/Style/CSS/)** (c/ **[Bootstrap](http://getbootstrap.com/)**) + **[JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** (c/ **[jQuery](https://jquery.com/)**): Não utilizei nenhum framework para implementar essa camada da solução, apenas bibliotecas facilitadoras, pois o foco era maior na parte backend, o desejo era apenas apresentar uma interface simples que conseguisse executar boa parte dos endpoints.
 
 ### Testes
 
@@ -126,6 +127,6 @@ Foi criado um algoritmo de conversão de `base 10` para `base 58`, onde eu sempr
 
 ## Conclusão
 
-Aprendi bastante em 3 dias de desenvolvimento, ainda existem várias melhorias que podem ser realizadas e possivelmente várias refatorações a serem feitas, a maior parte delas esta na parte cliente, talvez usando algum framework como [Angular](https://angular.io/) ou [React](https://facebook.github.io/react/), também configuraria algum serviço de integração continua como o [Travis.ci](https://travis-ci.org), para agilizar e tornar seguro o processo de deploy. Enfim, novas melhoras em outro fork, num futuro bem próximo... ;)
+Aprendi bastante em 3 dias de desenvolvimento, ainda existem várias melhorias que podem ser realizadas e possivelmente várias refatorações a serem feitas, a maior parte delas esta na parte cliente, talvez usando algum framework como [Angular](https://angular.io/) ou [React](https://facebook.github.io/react/), também configuraria algum serviço de integração continua como o [Travis CI](https://travis-ci.org), para agilizar e tornar seguro o processo de deploy. Enfim, novas melhoras em outro fork, num futuro bem próximo... ;)
 
-AVANTE MOÇADA! :muscle:
+**AVANTE MOÇADA!** :muscle:
