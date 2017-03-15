@@ -101,4 +101,4 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 
 Aprendi bastante em 3 dias de desenvolvimento, ainda existem várias melhorias que podem ser realizadas e possivelmente vários refatorações a serem feitos.
 
-AVANTE MOCADA! :muscle:
+AVANTE MOÇADA! :muscle:
