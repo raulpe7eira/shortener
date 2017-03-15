@@ -50,6 +50,13 @@ describe('ENDPOINTS BY ShorturlCtrl', () => {
 
     describe('GET HTTP://SHORTENER/U/:alias', () => {
 
+        it('PAGE NOT FOUND', (done) => {
+            request(server).get('/shortener/u').end((err, res) => {
+                assert.equal(res.statusCode, 404);
+                done();
+            });
+        });
+
         it('RETRIEVE URL', (done) => {
             request(server).get('/shortener/u/google').end((err, res) => {
                 assert.equal(res.statusCode, 302);
