@@ -97,6 +97,6 @@ Foi criado um algoritmo de conversão de `base 10` para `base 54`, onde eu sempr
 
 **[Heroku](https://heroku.com)** (PAAS) + **[mLab](https://mlab.com)** (BAAS): Ambos foram escolhidos pela facilidade de uso e seus pacotes gratuitos. Além de serem facilmente integrados com o [GitHub](https://github.com/), que é responsável pelo versionamento do cdigo.
 
-## Conclusao
+## Conclusão
 
 Aprendi bastante em 3 dias de desenvolvimento, ainda existem várias melhorias que podem ser realizadas e possivelmente vários refatorações a serem feitos, AVANTE MOCADA! :muscle:
