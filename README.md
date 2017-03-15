@@ -69,7 +69,7 @@ $ sh scripts/tst-server.sh
 
 ### Criação de Alias
 
-Foi criado um algoritmo de conversão de `base 10` para `base 58`, onde eu sempre espero um `inteiro` e retorno uma `string` convertida, para garantir que o `número` será sempre único, a base possui uma tabela sequencial que toda vez que há a necessidade de criar um `Alias` não customizado, incrementamos a última sequência e com base nesse `número` é gerada a `string` que será o novo `Alias`.
+Foi criado um algoritmo de conversão de `base 10` para `base 58`, onde eu sempre espero um `inteiro` e retorno uma `string` convertida, para garantir que o `número` será sempre único, a base possui uma tabela sequencial que toda vez que haja necessidade de criar um `Alias` não customizado, incrementamos a última sequência e com base nesse `número` é gerada a `string` que será o novo `Alias`.
 
 ### Diagrama de sequência
 
