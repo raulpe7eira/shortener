@@ -1,4 +1,4 @@
-# Shortener (forked from [bemobi/hire.me](https://github.com/bemobi/hire.me))
+# Shortener (vlab for [http://bemobi.com.br/](http://bemobi.com.br/))
 
 Um pequeno projeto para testar minhas habilidades.
 
