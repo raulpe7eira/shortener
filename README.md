@@ -46,7 +46,7 @@ _Obs.:_ Vale ressaltar que em ambiente de produção, muitas das variáveis são
 
 ## Subir & Rodar
 
-### Ambiente de desenvolvemento
+### Ambiente de desenvolvimento
 
 ```bash
 $ sh scripts/dsv-server.sh
