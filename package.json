@@ -1,7 +1,10 @@
 {
   "name": "shortener",
-  "version": "1.0.0",
   "description": "A URL Shortener Service",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.11.1"
+  },
   "main": "server.js",
   "scripts": {
     "postinstall": "bower install"
